@@ -24,8 +24,8 @@ Route::group(['middleware' => ['web', 'admin']], function()
 Route::group(['middleware' => 'web'], function()
 {
     // Login Routes...
-    $this->get('api/v1/clientportal/login', 'Auth/LoginController@loginAuthenticateClient')->middleware('auth:api');
-    $this->get('api/v1/clientportal/logout', 'Auth/LoginController@logoutClient')->middleware('auth:api');
+    $this->get('api/v1/login', 'Auth/LoginController@loginAuthenticateClient')->middleware('auth:api');
+    $this->get('api/v1/logout', 'Auth/LoginController@logoutClient')->middleware('auth:api');
     //$this->get('api/primaportal/login', 'Auth/LoginController@loginAuthenticatePrima')->middleware('auth:api');    
     //$this->get('api/primaportal/logout', 'Auth/LoginController@logoutPrima')->middleware('auth:api');
 
@@ -37,7 +37,7 @@ Route::group(['middleware' => 'web'], function()
 {
     // Registration Routes...
     //$this->post('api/primaportal/register', 'Auth/RegisterController@registerAuthenticatePrima')->middleware('auth:api');
-    $this->post('api/v1/clientportal/register', 'Auth/RegisterController@registerAuthenticateClient')->middleware('auth:api');
+    //$this->post('api/v1/register', 'Auth/RegisterController@registerAuthenticateClient')->middleware('auth:api');
     
 });
 
@@ -46,7 +46,7 @@ Route::group(['middleware' => 'web'], function()
 {
     // Forgot Password Routes...
     //$this->post('api/primaportal/password/email', 'Auth/ForgotPasswordController@sendResetLinkEmail');
-    $this->post('api/v1/clientportal/login/password/email', 'Auth/ForgotPasswordController@sendResetLinkEmail');
+    $this->post('api/v1/login/password/email', 'Auth/ForgotPasswordController@sendResetLinkEmail');
     
 });
 
@@ -55,7 +55,7 @@ Route::group(['middleware' => 'web'], function()
 {
     // Reset Password Routes...
     //$this->post('api/primaportal/password/reset', 'ResetPasswordController@resetpassword');
-    $this->post('api/v1/clientportal/password/reset', 'ResetPasswordController@resetpassword');
+    $this->post('api/v1/password/reset', 'ResetPasswordController@resetpassword');
       
 });
 
@@ -71,43 +71,52 @@ Route::group(['middleware' => 'web'], function()
 |
 */
 
+Route::group(['middleware' => ['web']], function () {
+   
+    Route::get('api/v1/who-iam', 'AddressController@getWhoiam');
+    
+    Route::get('api/v1/contacts', 'ContactController@getContacts');
+    
+    Route::get('api/v1/contacts/{id}', 'ContactController@getContactDetails');
+    
+    Route::get('api/v1/cases', 'CaseController@getCases');
+    
+    Route::get('api/v1/cases/{id}', 'CaseController@getCasesDetails');
+    
+    Route::get('api/v1/address', 'AddressController@getAddress');
+    
+    Route::get('api/v1/previous-address', 'AddressController@getPreAddress');
+    
+    Route::get('api/v1/phones', 'PhoneController@getPhoneDetails');
+    
+    Route::get('api/v1/jobs', 'JobController@getJobDetails');
+    
+    Route::get('api/v1/educational', 'EducationalHistoryController@getEducational');
+    
+    Route::get('api/v1/notes', 'NoteController@getNotes');
+    
+    Route::get('api/v1/i94history', 'i94HistoryController@getI94History');
+    
+    Route::get('api/v1/related-grid', 'TenantController@getRelatedGrid');
+    
+    Route::get('api/v1/flow', 'FlowController@getFlow');
+    
+    Route::get('api/v1/checklist', 'ChecklistController@getChecklist');
+    
+    Route::get('api/v1/recipient-number', 'RecipientNumberController@getRecipientNumber');
+   
+});
+
 
 
 Route::group(['middleware' => ['web']], function () {
    
-    Route::get('api/v1/clientportal/who-iam', 'AddressController@getWhoiam');
-    
-    Route::get('api/v1/clientportal/contacts', 'ContactController@getContacts');
-    
-    Route::get('api/v1/clientportal/contacts/{id}', 'ContactController@getContactDetails');
-    
-    Route::get('api/v1/clientportal/cases', 'CaseController@getCases');
-    
-    Route::get('api/v1/clientportal/cases/{id}', 'CaseController@getCasesDetails');
-    
-    Route::get('api/v1/clientportal/address', 'AddressController@getAddress');
-    
-    Route::get('api/v1/clientportal/previous-address', 'AddressController@getPreAddress');
-    
-    Route::get('api/v1/clientportal/phones', 'PhoneController@getPhoneDetails');
-    
-    Route::get('api/v1/clientportal/jobs', 'JobController@getJobDetails');
-    
-    Route::get('api/v1/clientportal/educational', 'EducationalHistoryController@getEducational');
-    
-    Route::get('api/v1/clientportal/notes', 'NoteController@getNotes');
-    
-    Route::get('api/v1/clientportal/i94history', 'i94HistoryController@getI94History');
-    
-    Route::get('api/v1/clientportal/related-grid', 'TenantController@getRelatedGrid');
-    
-    Route::get('api/v1/clientportal/flow', 'FlowController@getFlow');
-    
-    Route::get('api/v1/clientportal/checklist', 'ChecklistController@getChecklist');
-    
-    Route::get('api/v1/clientportal/recipient-number', 'RecipientNumberController@getRecipientNumber');
-   
+    Route::get('api/v1/s3upload', 'S3DocumentUpload@UploadFile');
+    Route::post('api/v1/s3uploaddocs', 'S3DocumentUpload@UploadFile');
+
 });
+
+
 
 //
 //Route::group(['middleware' => ['web']], function () {

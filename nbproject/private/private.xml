@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/UserTenantController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/UserController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/ContactController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/PracticeAreaController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/FormController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/CaseController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/FlowController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/Auth/RegisterController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/AuthController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/HomeController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Routes/routes.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/.env</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/PhoneController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/EducationalHistoryController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/AddressController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/CaseTypeController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/Auth/LoginController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/ChecklistController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/TenantController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/S3DocumentUpload.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/Auth/ForgotPasswordController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/NoteController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/RecipientNumberController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/JobController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/ClientPortalUserController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/Auth/ResetPasswordController.php</file>
+            <file>file:/E:/xampp/htdocs/PrimaFacieAPI_laravel/Prima_laravel/app/Http/Controllers/i94HistoryController.php</file>
+        </group>
+    </open-files>
+</project-private>
