@@ -31,9 +31,13 @@ class ChecklistController extends Controller
     }
     
     
-    public function getChecklist() {
-        
-        
-        
-    }
+    public function getChecklist() {        
+   
+        $checklists = CaseChecklist::where('case_id', '=', Input::get('case_id'))->orderBy('priority')->get();
+
+        return View::make('case.checklist', array(
+            'checklists' => $checklists,
+            'case_id' => Input::get('case_id'),
+        ));
+    }   
 }

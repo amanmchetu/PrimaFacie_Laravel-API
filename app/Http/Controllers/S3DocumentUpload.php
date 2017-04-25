@@ -40,5 +40,5 @@ class S3DocumentUpload extends Controller
 
             return Redirect::route('cases-show', array('id' => Input::get('file_case_id')));
         }
-    }
+    } 
 }

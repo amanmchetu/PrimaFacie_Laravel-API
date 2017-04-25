@@ -32,8 +32,19 @@ class NoteController extends Controller
     
     public function getNotes() {
         
-        
-        
+        $primafacie = new Primafacie();
+        $contact = Contact::find(Input::get('contact_id'));
+
+        $notes = Note::with('user', 'Ccase')
+            ->where('contact_id', '=', Input::get('contact_id'))
+            ->orderBy(DB::raw("STR_TO_DATE(date,'%Y-%m-%d')"), 'DESC')
+            ->get();
+
+        return View::make('note.ByContact', array(
+            'notes' => $notes,
+            'contact' => $contact
+        ));
+
     }
-    
+       
 }

@@ -46,7 +46,7 @@ Route::group(['middleware' => 'web'], function()
 {
     // Forgot Password Routes...
     //$this->post('api/primaportal/password/email', 'Auth/ForgotPasswordController@sendResetLinkEmail');
-    $this->post('api/v1/login/password/email', 'Auth/ForgotPasswordController@sendResetLinkEmail');
+    //$this->post('api/v1/login/password/email', 'Auth/ForgotPasswordController@sendResetLinkEmail');
     
 });
 
@@ -55,7 +55,7 @@ Route::group(['middleware' => 'web'], function()
 {
     // Reset Password Routes...
     //$this->post('api/primaportal/password/reset', 'ResetPasswordController@resetpassword');
-    $this->post('api/v1/password/reset', 'ResetPasswordController@resetpassword');
+   //$this->post('api/v1/password/reset', 'ResetPasswordController@resetpassword');
       
 });
 
@@ -107,14 +107,12 @@ Route::group(['middleware' => ['web']], function () {
    
 });
 
-
-
-Route::group(['middleware' => ['web']], function () {
-   
-    Route::get('api/v1/s3upload', 'S3DocumentUpload@UploadFile');
-    Route::post('api/v1/s3uploaddocs', 'S3DocumentUpload@UploadFile');
-
-});
+//Route::group(['middleware' => ['web']], function () {
+//   
+//    Route::get('api/v1/s3upload', 'S3DocumentUpload@UploadedFile');
+//    Route::post('api/v1/s3uploaddocs', 'S3DocumentUpload@UploadFile');
+//
+//});
 
 
 

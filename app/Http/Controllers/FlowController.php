@@ -32,7 +32,12 @@ class FlowController extends Controller
     
     public function getFlow() {
         
-        
-        
-    }
+        $flows = Flow::where('case_id', '=', Input::get('case_id'))->orderBy('priority')->get();
+
+        return View::make('case.flow', array(
+            'flows' => $flows,
+            'case_id' => Input::get('case_id'),
+        ));
+    }       
+  
 }
